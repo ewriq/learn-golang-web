@@ -7,14 +7,14 @@ import (
 
 
 func main()  {
-	app := fiber.New()
+	app := fiber.New() //Fiber uygulaması oluştur 
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		fmt.Println("Hello word")
-		return c.JSON(fiber.Map{
+	app.Get("/", func(c *fiber.Ctx) error { // / yolunda get istegi oluşturur 
+		fmt.Println("Hello word") // hello word yazar 
+		return c.JSON(fiber.Map{ // dönütü json olarak ayarlar  ve hello:word olarak dönderir
           "hello":"word",
 		})
 	})
 	
-   app.Listen(":8080")
+   app.Listen(":8080") //:8080 portunda uygulamayı başlatır
 }
