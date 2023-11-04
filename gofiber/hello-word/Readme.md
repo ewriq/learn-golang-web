@@ -1,25 +1,28 @@
-### GoFiber ile hello word yazmak
+# GoFiber ile hello word yazmak
 
-**main.go diye bir dosya oluşturuyoruz ve terminale sırayla 
-`go mod init GolangWeb`
-`go get github.com/gofiber/fiber/v2` 
-yazın.**
+**main.go isminde bir dosya oluşturuyoruz ve şunları terminale yazıyoruz**
+```bash
+go mod init GolangWeb
+go get github.com/gofiber/fiber/v2
+```
 
-Sonra Main.go da
-fiber paketmizi import ediyoruz ve app adında yeni fiber uygulaması oluşturuyoruz
+**Sonra Main.go da
+fiber paketmizi import ediyoruz ve app adında yeni fiber uygulaması oluşturuyoruz**
+
 ```go
 package main
+
 import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func main(){
+func main() {
 	app := fiber.New()
 }
 ```
 
-Sonrasında Method ve Route tanımlamamız lazım
-Gofiber da kullanabileceğimiz Methodlar
+**Sonrasında Method ve Route tanımlamamız gerekmektedir aşşagıda 
+Gofiber'da kullanabileceğimiz Methodlar**
 - **`Get`** <br>
 `GET` methodu, belirtilen kaynağın bir temsilini ister. `GET` kullanan istekler yalnızca veri almalıdır.
 
@@ -42,7 +45,7 @@ Gofiber da kullanabileceğimiz Methodlar
 `OPTIONS` methodu, hedef kaynak için iletişim seçeneklerini açıklar
 
 - `Trace` <br>
-`TRACE` methodu, hedef kaynağa giden yol boyunca bir mesaj geri dönüş testi gerçekleştirir."
+`TRACE` methodu, hedef kaynağa giden yol boyunca bir mesaj geri dönüş testi gerçekleştirir.
 
 - `Patch` <br>
 `PATCH` methodu bir kaynağa kısmi değişiklikler uygular.
@@ -53,6 +56,7 @@ bu rotaya girenler bir json görecekler
 
 ```go
 package main
+
 import (
 	"github.com/gofiber/fiber/v2"
 )
