@@ -14,3 +14,21 @@ func main() {
 }
 ```
 
+- **Handlerden home kısmını alır pathnamesi / olan get istegine verir**
+```go
+func Initalize(app *fiber.App){
+
+    app.Get("/", Handler.Home) //Home import edilir pathname / olarak belirlenir 
+	
+}
+```
+- **Home fonksüyonu ise düz yazdıgımız gibi koyulur**
+```go
+func Home(c *fiber.Ctx) error {
+	c.JSON(fiber.Map{ //Json olarak  { "hello":"word" } döndürülür
+		"hello":"world",
+	})
+	return nil
+}
+```
+
