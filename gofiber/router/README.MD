@@ -6,7 +6,7 @@
 
 - **Dosyaları  ve klasörleri belirtildigi gibi oluşturunuz.**
 
-- **Aşşagıdaki işlem ile routeri belirtiriz yani yönlendiririz yani web sitemizin maini orası olur yani yönlendiricisi orası olur (Routers.Initalize kısmı)**
+- **Aşşagıdaki işlem ile routeri belirtiriz yani yönlendiririz yani web sitemizin maini olur yani yönlendiricisi (Routers.Initalize kısmı)**
 
 ```go
 func main() {
@@ -26,7 +26,7 @@ func Initalize(app *fiber.App){
 	
 }
 ```
-- **Home fonksüyonu ise düz yazdıgımız gibi koyulur**
+- **Home fonksüyonu ise düz yazdıgımız gibi yazılır**
 ```go
 func Home(c *fiber.Ctx) error {
 	c.JSON(fiber.Map{ //Json olarak  { "hello":"word" } döndürülür
