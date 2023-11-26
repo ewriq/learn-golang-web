@@ -1,4 +1,8 @@
 # GoFiber ile Router 
+### Router nedir
+-  **Router projelerimizi daha okunabilir hale getirir karmaşıklıgı düzeltir**
+
+### Nasıl yapılır Nedir 
 
 - **Dosyaları  ve klasörleri belirtildigi gibi oluşturunuz.**
 
